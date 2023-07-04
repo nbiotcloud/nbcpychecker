@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "nbcpychecker"
-version = "1.0.1"
+version = "1.0.2"
 description = "NBIOT Cloud Python Code Checker"
 readme = "README.md"
 license = "MIT"
