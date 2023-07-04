@@ -135,7 +135,11 @@ class Checker:
 
     def _check_copyright_header(self, errors: Errors, path: Path):
         """Check Copyright Header."""
+        pidx = len(path.parts)
         for filepath in path.glob("**/*.py"):
+            # Exclude temp folder.
+            if filepath.parts[pidx].startswith("."):
+                continue
             filecontent = filepath.read_text()
             mat = _RE_PY_COPYRIGHT.match(filecontent)
             if mat:
