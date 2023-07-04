@@ -1,0 +1,10 @@
+usage: nbcpychecker [-h] {check} ...
+
+NBIOT Cloud Python Code Checker..
+
+positional arguments:
+  {check}
+    check     Check actual project
+
+options:
+  -h, --help  show this help message and exit

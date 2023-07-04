@@ -1,0 +1,7 @@
+usage: nbcpychecker check [-h] [path]
+
+positional arguments:
+  path        Project Path
+
+options:
+  -h, --help  show this help message and exit
