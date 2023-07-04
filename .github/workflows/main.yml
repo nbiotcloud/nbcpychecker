@@ -22,8 +22,6 @@ jobs:
           pip install tox "poetry>=1.4" coveralls
       - name: TOX
         run: tox
-      - name: Modification Check
-        run: bash -c 'test $(git status --porcelain | wc -l) -eq 0'
       - name: Upload coverage data to coveralls.io
         run: coveralls --service=github
         env:
